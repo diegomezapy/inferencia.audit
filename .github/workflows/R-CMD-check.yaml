@@ -34,8 +34,6 @@ jobs:
           r-version: ${{ matrix.config.r }}
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-pandoc@v2
-
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: any::rcmdcheck
@@ -44,4 +42,5 @@ jobs:
       - uses: r-lib/actions/check-r-package@v2
         with:
           upload-snapshots: true
-          args: 'c("--no-manual", "--as-cran")'
+          args: 'c("--no-manual", "--no-build-vignettes", "--as-cran")'
+          build_args: 'c("--no-build-vignettes", "--no-manual")'

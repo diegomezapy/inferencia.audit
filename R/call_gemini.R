@@ -33,7 +33,8 @@ llamar_gemini <- function(texto_pdf,
     contents = list(list(parts = list(list(text = prompt_texto)))),
     generationConfig = list(
       temperature       = 0,
-      responseMimeType  = "application/json"
+      responseMimeType  = "application/json",
+      responseSchema    = response_schema()
     )
   )
   resp <- httr2::request(url) |>

@@ -9,6 +9,8 @@
 Auditoria automatizada de fallas en muestreo e inferencia estadistica para
 articulos cientificos cuantitativos.
 
+**App publica:** <https://diegomeza.shinyapps.io/inferencia-audit/>
+
 Es la implementacion abierta y citable del protocolo metodologico aplicado en
 la tesis doctoral *"Fallas inferenciales en revistas latinoamericanas"*
 (FACEN-UNA, 2026), que audito 2.062 articulos extraidos de 277 revistas

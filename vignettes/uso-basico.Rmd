@@ -1,0 +1,73 @@
+---
+title: "Uso basico de inferencia.audit"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Uso basico de inferencia.audit}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", eval = FALSE)
+```
+
+# Que hace este paquete
+
+`inferencia.audit` clasifica articulos cientificos cuantitativos segun fallas
+en muestreo e inferencia estadistica, usando el mismo protocolo metodologico
+calibrado (v4.1-NTK) que se utilizo en la auditoria de la tesis doctoral
+asociada (universo `N = 988` revistas DOAJ Sudamerica 2025, muestra `n = 277`,
+`2.062` articulos auditados).
+
+La regla operacional para clasificar como **Falla fuerte** se basa en dos
+condiciones simultaneas:
+
+* **A** muestreo no probabilistico, y
+* **C** inferencia estadistica aplicada con extrapolacion poblacional explicita.
+
+(Decision metodologica del 2026-04-25; ver `BITACORA.md` Paso 21.)
+
+# Configuracion
+
+```{r}
+# Obtener una API key gratuita en https://aistudio.google.com/app/apikey
+Sys.setenv(GOOGLE_API_KEY = "tu_clave_aqui")
+
+library(inferencia.audit)
+```
+
+# Evaluar un articulo
+
+```{r}
+res <- evaluar_articulo("ruta/al/articulo.pdf")
+
+res$clasificacion_final     # "Falla fuerte" / "Debilidad importante" / etc.
+res$subtipo                 # subtipo de FF si aplica
+res$nivel_confianza         # "Alta" / "Media" / "Baja"
+res$motivo_principal        # justificacion breve
+
+# Campos auxiliares binarios (las tres condiciones + elegibilidad)
+res$campos_binarios
+```
+
+# Lanzar la app Shiny localmente
+
+```{r}
+lanzar_shiny()
+```
+
+# Reproducibilidad
+
+El prompt completo enviado al modelo es accesible publicamente:
+
+```{r}
+cat(prompt_v41())
+```
+
+# Cita
+
+Si usa este paquete, por favor cite la tesis y el repositorio:
+
+> Meza Bogado, D. B. (2026). *Auditoria de fallas inferenciales en revistas
+> cientificas sudamericanas (DOAJ 2025): paquete inferencia.audit*. Tesis
+> Doctoral en Ciencias, FACEN-UNA.

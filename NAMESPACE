@@ -1,0 +1,4 @@
+export(evaluar_articulo)
+export(evaluar_texto)
+export(lanzar_shiny)
+export(prompt_v41)

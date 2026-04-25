@@ -1,0 +1,8 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^DEPLOY\.md$
+^\.github$
+^inst/shiny/rsconnect$
+^inst/shiny/\.secrets$
+^inst/shiny/quota\.sqlite$
+^\.DS_Store$

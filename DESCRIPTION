@@ -1,0 +1,29 @@
+Package: inferencia.audit
+Type: Package
+Title: Auditoria Automatizada de Fallas Inferenciales en Articulos Cientificos
+Version: 0.1.0
+Authors@R: person("Diego Bernardo", "Meza Bogado", email = "dmeza.py@gmail.com", role = c("aut", "cre"))
+Description: Clasifica articulos cientificos cuantitativos segun fallas en
+    diseno muestral e inferencia estadistica, usando un protocolo metodologico
+    calibrado (v4.1-NTK) operacionalizado mediante un modelo de lenguaje de
+    gran escala. Las categorias son 'Falla fuerte', 'Debilidad importante',
+    'Sin falla relevante' y 'No aplica'. Incluye una aplicacion Shiny lista
+    para desplegar.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+    pdftools (>= 3.0.0),
+    httr2 (>= 1.0.0),
+    jsonlite (>= 1.8.0)
+Suggests:
+    shiny (>= 1.7.0),
+    DBI,
+    RSQLite,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/diegomezapy/inferencia.audit
+BugReports: https://github.com/diegomezapy/inferencia.audit/issues

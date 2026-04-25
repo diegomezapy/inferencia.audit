@@ -29,40 +29,33 @@ condiciones simultaneas:
 
 # Configuracion
 
-```{r}
-# Obtener una API key gratuita en https://aistudio.google.com/app/apikey
-Sys.setenv(GOOGLE_API_KEY = "tu_clave_aqui")
+Obtener una API key gratuita en <https://aistudio.google.com/app/apikey> y
+exponerla como variable de entorno antes de cargar el paquete:
 
-library(inferencia.audit)
-```
+    Sys.setenv(GOOGLE_API_KEY = "tu_clave_aqui")
+    library(inferencia.audit)
 
 # Evaluar un articulo
 
-```{r}
-res <- evaluar_articulo("ruta/al/articulo.pdf")
+    res <- evaluar_articulo("ruta/al/articulo.pdf")
 
-res$clasificacion_final     # "Falla fuerte" / "Debilidad importante" / etc.
-res$subtipo                 # subtipo de FF si aplica
-res$nivel_confianza         # "Alta" / "Media" / "Baja"
-res$motivo_principal        # justificacion breve
+    res$clasificacion_final     # "Falla fuerte" / "Debilidad importante" / etc.
+    res$subtipo                 # subtipo de FF si aplica
+    res$nivel_confianza         # "Alta" / "Media" / "Baja"
+    res$motivo_principal        # justificacion breve
 
-# Campos auxiliares binarios (las tres condiciones + elegibilidad)
-res$campos_binarios
-```
+    # Campos auxiliares binarios (las tres condiciones + elegibilidad)
+    res$campos_binarios
 
 # Lanzar la app Shiny localmente
 
-```{r}
-lanzar_shiny()
-```
+    lanzar_shiny()
 
 # Reproducibilidad
 
 El prompt completo enviado al modelo es accesible publicamente:
 
-```{r}
-cat(prompt_v41())
-```
+    cat(prompt_v41())
 
 # Cita
 

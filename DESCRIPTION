@@ -11,8 +11,7 @@ Description: Clasifica articulos cientificos cuantitativos segun fallas en
     para desplegar.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.3
 Imports:
     pdftools (>= 3.0.0),
     httr2 (>= 1.0.0),

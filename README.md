@@ -1,5 +1,11 @@
 # inferencia.audit
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/diegomezapy/inferencia.audit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/diegomezapy/inferencia.audit/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<!-- badges: end -->
+
 Auditoria automatizada de fallas en muestreo e inferencia estadistica para
 articulos cientificos cuantitativos.
 
@@ -66,9 +72,22 @@ cat(inferencia.audit::prompt_v41())
 
 ## Cita
 
-> Meza Bogado, D. B. (2026). *Auditoria de fallas inferenciales en revistas
-> cientificas sudamericanas (DOAJ 2025): paquete inferencia.audit*. Tesis
-> Doctoral en Ciencias, FACEN-UNA.
+Desde R:
+
+```r
+citation("inferencia.audit")
+```
+
+Cita libre:
+
+> Meza Bogado, D. B. (2026). *inferencia.audit: Auditoria automatizada de
+> fallas inferenciales en articulos cientificos*. Paquete R version 0.1.0.
+> https://github.com/diegomezapy/inferencia.audit
+
+> Meza Bogado, D. B. (2026). *Fallas inferenciales en revistas
+> latinoamericanas: una auditoria probabilistica multietapa*. Tesis Doctoral
+> en Ciencias, Facultad de Ciencias Exactas y Naturales (FACEN), Universidad
+> Nacional de Asuncion.
 
 ## Licencia
 

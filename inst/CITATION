@@ -1,0 +1,37 @@
+citHeader("Para citar el paquete `inferencia.audit` en publicaciones, use:")
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "inferencia.audit: Auditoria automatizada de fallas inferenciales en articulos cientificos",
+  author   = person("Diego Bernardo", "Meza Bogado",
+                    email = "dmeza.py@gmail.com",
+                    role  = c("aut", "cre")),
+  year     = "2026",
+  note     = "Paquete R version 0.1.0",
+  url      = "https://github.com/diegomezapy/inferencia.audit",
+
+  textVersion = paste(
+    "Meza Bogado, D. B. (2026).",
+    "inferencia.audit: Auditoria automatizada de fallas inferenciales en articulos cientificos.",
+    "Paquete R version 0.1.0.",
+    "https://github.com/diegomezapy/inferencia.audit"
+  )
+)
+
+bibentry(
+  bibtype  = "PhdThesis",
+  title    = "Fallas inferenciales en revistas latinoamericanas: una auditoria probabilistica multietapa",
+  author   = person("Diego Bernardo", "Meza Bogado"),
+  year     = "2026",
+  school   = "Facultad de Ciencias Exactas y Naturales (FACEN), Universidad Nacional de Asuncion",
+  type     = "Tesis Doctoral en Ciencias",
+
+  textVersion = paste(
+    "Meza Bogado, D. B. (2026).",
+    "Fallas inferenciales en revistas latinoamericanas:",
+    "una auditoria probabilistica multietapa.",
+    "Tesis Doctoral en Ciencias,",
+    "Facultad de Ciencias Exactas y Naturales (FACEN),",
+    "Universidad Nacional de Asuncion."
+  )
+)

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "Si usa este paquete en una publicacion, por favor citelo como sigue."
+title: "inferencia.audit: Auditoria automatizada de fallas inferenciales en articulos cientificos"
+version: "0.1.0"
+date-released: "2026-04-25"
+url: "https://github.com/diegomezapy/inferencia.audit"
+repository-code: "https://github.com/diegomezapy/inferencia.audit"
+license: MIT
+type: software
+authors:
+  - given-names: "Diego Bernardo"
+    family-names: "Meza Bogado"
+    email: "dmeza.py@gmail.com"
+    affiliation: "Facultad de Ciencias Exactas y Naturales, Universidad Nacional de Asuncion"
+keywords:
+  - "methodology audit"
+  - "statistical inference"
+  - "non-probability sampling"
+  - "scientific journals"
+  - "South America"
+  - "Latin America"
+  - "DOAJ"
+  - "Gemini API"
+  - "R package"
+  - "Shiny"
+preferred-citation:
+  type: thesis
+  title: "Fallas inferenciales en revistas latinoamericanas: una auditoria probabilistica multietapa"
+  authors:
+    - given-names: "Diego Bernardo"
+      family-names: "Meza Bogado"
+  year: 2026
+  thesis-type: "Tesis Doctoral en Ciencias"
+  institution:
+    name: "Facultad de Ciencias Exactas y Naturales (FACEN)"
+    department: "Universidad Nacional de Asuncion"

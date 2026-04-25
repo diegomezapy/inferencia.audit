@@ -52,3 +52,46 @@ test_that("parsear_json_tolerante maneja JSON envuelto en markdown", {
   expect_equal(res$a, 1)
   expect_equal(res$b, "hola")
 })
+
+test_that("aplicar_regla_AC cubre los 4 escenarios canonicos sin llamar a la API", {
+  base <- list(
+    aplica_muestreo_inferencial = "Si",
+    nivel_confianza_clasificacion = "Alta",
+    motivo_principal = "test"
+  )
+
+  ff_clasica <- inferencia.audit:::aplicar_regla_AC(c(base, list(
+    muestreo_no_probabilistico = "Si",
+    advierte_limites_muestreo  = "No",
+    extrapola_a_poblacion      = "Si",
+    clasificacion_inferencial  = "Falla fuerte"
+  )))
+  expect_equal(ff_clasica$clasificacion_final, "Falla fuerte")
+  expect_match(ff_clasica$subtipo, "clasica")
+
+  ff_hipocrita <- inferencia.audit:::aplicar_regla_AC(c(base, list(
+    muestreo_no_probabilistico = "Si",
+    advierte_limites_muestreo  = "Si",
+    extrapola_a_poblacion      = "Si",
+    clasificacion_inferencial  = "Debilidad importante"
+  )))
+  expect_equal(ff_hipocrita$clasificacion_final, "Falla fuerte")
+  expect_match(ff_hipocrita$subtipo, "reconocimiento")
+
+  di <- inferencia.audit:::aplicar_regla_AC(c(base, list(
+    muestreo_no_probabilistico = "Si",
+    advierte_limites_muestreo  = "Si",
+    extrapola_a_poblacion      = "No",
+    clasificacion_inferencial  = "Debilidad importante"
+  )))
+  expect_equal(di$clasificacion_final, "Debilidad importante")
+  expect_true(is.na(di$subtipo))
+
+  sfr <- inferencia.audit:::aplicar_regla_AC(c(base, list(
+    muestreo_no_probabilistico = "No",
+    advierte_limites_muestreo  = "Si",
+    extrapola_a_poblacion      = "No",
+    clasificacion_inferencial  = "Sin falla relevante"
+  )))
+  expect_equal(sfr$clasificacion_final, "Sin falla relevante")
+})

@@ -10,3 +10,4 @@ inst/shiny/rsconnect/
 inst/shiny/quota.sqlite
 inst/shiny/quota.sqlite-journal
 *.log
+inst/shiny/.Renviron

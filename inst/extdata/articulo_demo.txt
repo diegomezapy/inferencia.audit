@@ -1,0 +1,43 @@
+Titulo: Habitos de uso de redes sociales en estudiantes universitarios paraguayos
+
+Resumen. El presente trabajo analiza los habitos de uso de redes sociales en
+estudiantes universitarios. Se aplico un cuestionario en linea a 312 estudiantes
+de tres carreras de la Universidad. La seleccion de participantes se realizo
+mediante muestreo por conveniencia, contactando a estudiantes a traves de los
+delegados de curso. Los resultados muestran que los estudiantes universitarios
+paraguayos pasan en promedio 4,8 horas diarias en redes sociales, con una
+prevalencia de uso problematico del 38 por ciento. Se aplico un analisis de
+regresion logistica para identificar predictores del uso problematico, y se
+realizaron pruebas de chi-cuadrado para comparar grupos por carrera. Las pruebas
+arrojaron diferencias estadisticamente significativas entre carreras. Se
+concluye que el uso problematico de redes sociales constituye un problema
+relevante en la juventud universitaria del Paraguay y se recomienda la
+implementacion de politicas institucionales de prevencion. El estudio aporta
+evidencia empirica sobre el comportamiento digital de los jovenes universitarios
+del pais.
+
+Metodos. Se diseno un instrumento de 28 preguntas en escala Likert de 5
+puntos, validado en una prueba piloto con 30 estudiantes. La encuesta fue
+distribuida via Google Forms entre marzo y mayo. La participacion fue voluntaria
+y anonima. Se reclutaron 312 respuestas validas. El analisis estadistico se
+realizo en SPSS version 25. Se calcularon estadisticos descriptivos, pruebas de
+chi-cuadrado para asociaciones entre variables categoricas, y un modelo de
+regresion logistica binaria para identificar predictores del uso problematico.
+El nivel de significancia se establecio en p < 0.05.
+
+Resultados y discusion. La prevalencia de uso problematico fue del 38 por
+ciento (IC 95 por ciento: 32,7 a 43,7). Los estudiantes paraguayos muestran un
+patron de uso intensivo comparado con los reportes internacionales de la
+literatura. Las mujeres mostraron mayor prevalencia que los varones (p = 0,02).
+La regresion logistica identifico al tiempo de exposicion diaria y a la
+frecuencia de revision nocturna como predictores significativos. Estos
+resultados son relevantes para el diseno de politicas publicas de salud
+mental en jovenes a nivel nacional, y sugieren la necesidad de programas de
+intervencion en la poblacion universitaria del Paraguay. La generalizabilidad
+de los hallazgos a la poblacion universitaria nacional debe interpretarse con
+las debidas precauciones inherentes a este tipo de estudios.
+
+Conclusiones. El uso problematico de redes sociales en estudiantes
+universitarios paraguayos es elevado. Se confirma la asociacion entre tiempo de
+uso y problemas de sueno. Se sugiere implementar campanas de concientizacion
+en universidades del pais.

@@ -47,6 +47,22 @@ exponerla como variable de entorno antes de cargar el paquete:
     # Campos auxiliares binarios (las tres condiciones + elegibilidad)
     res$campos_binarios
 
+# Probar con texto de ejemplo
+
+El paquete incluye un texto de ejemplo en `inst/extdata/articulo_demo.txt`
+que describe un articulo ficticio con muestreo por conveniencia y
+extrapolacion poblacional explicita. Permite probar la libreria sin
+necesidad de un PDF real:
+
+    ruta_demo <- system.file("extdata", "articulo_demo.txt",
+                             package = "inferencia.audit")
+    texto <- paste(readLines(ruta_demo, encoding = "UTF-8"), collapse = "\n")
+
+    res <- evaluar_texto(texto, nombre_archivo = "articulo_demo.txt")
+    res$clasificacion_final   # "Falla fuerte" esperado
+    res$subtipo               # subtipo dependiente de si la IA detecto advertencia
+    res$campos_binarios       # debe mostrar A=Si, C=Si
+
 # Lanzar la app Shiny localmente
 
     lanzar_shiny()
